@@ -29,6 +29,14 @@
         #td1, #td2, #td3 {
             width: 200px;
         }
+
+        .special {
+            width: 200px;
+        }
+
+        #next {
+            text-align: center;
+        }
     </style>
 
 </head>
@@ -51,9 +59,9 @@
             <thead>
                 <tr>
                     <th>&nbsp;</th>
-                    <th id="td1">Hans</th>
-                    <th id="td2">Anna</th>
-                    <th id="td3">Berta</th>
+                    <th class="special">Hans</th>
+                    <th class="special">Anna</th>
+                    <th class="special">Berta</th>
                     <th>&nbsp;</th>
                 </tr>
             </thead>
@@ -87,6 +95,30 @@
             </tfoot>
         </table>
 
+        <table id="next">
+            <tr style="background: blue;">
+                <td rowspan="2" class="special">Kein</td>
+                <td>Problem</td>
+                <td>für</td>
+                <td>einen</td>
+            </tr>
+            <tr style="background: green;">
+                <td>Webmaster</td>
+                <td colspan="2" rowspan="3">wie</td>
+            </tr>
+            <tr style="background: yellow;">
+                <td colspan="2">Sie</td>
+            </tr>
+            <tr style="background: red;">
+                <td>gleich</td>
+                <td rowspan="2">feststellen</td>
+            </tr>
+            <tr style="background: purple;">
+                <td>werden</td>
+                <td>Nur</td>
+                <td>Mut!</td>
+            </tr>
+        </table>
 
     </main>
 
