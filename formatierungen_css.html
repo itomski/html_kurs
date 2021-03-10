@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+
+</head>
+<body>
+    
+    Hallo Welt <!-- 1.5em,  150% der geerbten Schriftgröße-->
+
+    <h1 class="rot">Boxen</h1>
+
+    <h2>Das ist ein Test...</h2>
+
+    <div id="b1" class="box rot">Box1</div>
+    
+    <div id="b2" class="box">
+        <a href="#">Test1a</a> <!-- direktes kind von div#b2 -->
+
+        <div id="b2_1"> <!-- direktes kind von div#b2 -->
+            <a href="#">Test3</a> <!-- direktes kind von div#b2_1 und indirektes Kind von div#b2 -->
+        </div>
+    </div>
+    
+    <div id="b3" class="box">
+        <a href="#">Test1b</a> <!-- direktes Kind von div -->
+
+        <p>
+            <a href="#">Test1c</a> <!-- direktes Kind von p, und indirektes Kind von div -->
+        </p>
+
+    </div>
+
+    <a href="#">Test2</a>
+
+</body>
+</html>

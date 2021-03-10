@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            margin: 0; /* Standard-Abstand entfernen */
+            font-family: Arial, Helvetica, sans-serif;
+            color: #444444;
+        }
+
+        header {
+            background-color: #f00;
+            height: 250px;
+        }
+
+        nav {
+            background-color: #ff0;
+            padding: 1em 2em;
+        }
+
+        /*nav > ul {*/
+        #main-nav {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        /*nav > ul > li {*/
+        .hnav > li {
+            display: inline-block;
+        }
+
+        .hnav li a {
+            text-decoration: none;
+            color: #333333;
+            margin-right: 0.75em;
+            text-transform: uppercase;
+        }
+
+        .hnav li a:hover {
+            color: #00ff00;
+            /*transition: all linear 2s;*/
+        }
+
+        main {
+            background-color: #f0f;
+            min-height: 500px;
+            padding: 2em;
+        }
+
+        main > h1 {
+            margin-top: 0;
+        }
+
+        footer {
+            background-color: #00f;
+            height: 250px;
+        }
+
+        footer .left,
+        footer .middle,
+        footer .right {
+            width: 33%;
+            float: left;
+        }
+
+        footer a {
+            color: #fff;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <header>
+        <!-- Bild als Hintergrund -->
+    </header>
+
+    <nav>
+        <ul id="main-nav" class="hnav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Produkte</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- 60%, 40% -->
+        <h1>Text</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus placeat inventore impedit at ab qui porro debitis possimus veritatis dolorem ex labore, minima, autem exercitationem natus dicta nam molestiae quibusdam ratione quasi cumque eveniet modi officia assumenda. Pariatur eaque qui ipsum consectetur ab, sapiente voluptates. Quidem in sapiente odio possimus qui eveniet consequuntur dolor nesciunt, facere non aliquam sit. Exercitationem quas voluptatibus corrupti ratione nobis assumenda. Libero omnis facere provident temporibus nihil neque delectus quo et, excepturi rem. Fugit consequuntur minima, nihil eligendi beatae voluptatibus corrupti placeat dolorum exercitationem amet rem eum, omnis sed similique? Vel, non magni! Quia, odit.</p>
+        <p>Nemo perferendis harum quisquam eum laboriosam suscipit nulla rerum illum at facilis nam itaque non distinctio necessitatibus, facere consectetur dolorem autem tenetur temporibus aut. Placeat neque aperiam enim sapiente harum vel tempora doloribus commodi! Molestias, iusto! Eius totam ab iusto reprehenderit nihil? Reprehenderit architecto provident non deserunt, quisquam adipisci et saepe magni dolorem omnis qui veniam assumenda! Reprehenderit quis voluptatum perspiciatis, alias odit delectus excepturi fugiat cumque cupiditate magnam, suscipit corrupti qui eum commodi enim impedit, accusamus animi pariatur sequi fuga. Excepturi consequatur veniam animi eligendi natus voluptatum nisi, omnis cumque necessitatibus quae a deserunt numquam voluptate libero, obcaecati neque?</p>
+    </main>
+
+    <footer>
+        <div class="left">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Produkte</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </div>
+        <div class="middle">
+            <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Impressum</a></li>
+                <li><a href="#">Kontakt</a></li>
+                <li><a href="#">Datenschutz</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+body {
+    color: #333333;
+    background-color: #eeeeee;
+    background-color: #ffff00;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+}
+
+div a { /* formatiert nur a-Elemente die Kinder von div sind, auch indirekte Kinder */
+    color: #ff0000;
+}
+
+div > a { /* formatiert nur a-Elemente die in eine direktes Kind von div sind */
+    color: #00ffff;
+}
+
+div#b2 div a { /* formatiert nur Kind-Elemente vom div mit der Id b2 */
+    color: #00ff00;   
+}
+
+.box { /* . = Klassenselektor */
+    width: 200px;
+    height: 200px;
+    /* background: #069999;
+    background: rgb(38, 135, 184); */
+    background: rgba(38, 135, 184, .5);
+}
+
+.rot {
+    color: #ff0000;
+}
