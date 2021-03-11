@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            /*color: red;*/
+            color: rgb(0,0,0)
+            
+        }
+        .form-box {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <form action="formular.html" method="get">
+            <fieldset>
+                <legend>Persönliche Daten:</legend>
+                    <div class="form-box">
+                        <label for="name">Nachname:*</label><br>
+                        <input type="text" name="nachname" id="nachname" size="40" maxlength="20" required><br>
+                    </div>
+                    <div class="form-box">
+                        <label for="name">Vorname:*</label><br>
+                        <input type="text" name="vorname" id="vorname" size="40" maxlength="40" required>
+                    </div>
+                    <div class="form-box">
+                        <label for="strasse">Straße:</label><br>
+                        <input type="text" name="strasse" id="strasse" size="40" maxlength="60">
+                    </div>
+                    <div class="form-box">
+                        <label for="email">E-Mail:*</label><br>
+                        <input type="email" name="email" id="email" size="40" maxlength="60" required>
+                    </div>
+                    <div class="form-box">
+                        <label for="telefonnumber">Telefonnummer:</label><br>
+                        <input type="number; text" name="telefonnumber" id="telefonnumber" size="40" maxlength="12">
+                    </div>
+                    <div class="form-box">
+                        <label for="alter">Alter:*</label><br>
+                        <input type="number" min="18" placeholder="Mindestalter 18" required>
+                    </div>                
+            </fieldset>
+            <fieldset>
+                <legend>Ihre Urlaubsreise:</legend>
+                    <div class="form-box">
+                        <label for="ort">Wohin soll die Reise gehen?</label><br>
+                            <select name="ort" id="ort" size="6">
+                                <option value="fra">Frankreich</option>
+                                <option value="esp">Spanien</option>
+                                <option value="ita" selected>Italien</option>
+                                <option value="us">USA</option>
+                                <option value="chn">China</option>
+                                <option value="tha">Thailand</option>
+                            </select>
+                    </div>
+                    <div class="form-box">
+                        <label for="date">Abreisedatum:</label><br>
+                        <input type="date" name="reisedatum" size="40" value="date">
+                    </div>
+                    <div class="form-box">
+                        <label for="text">Anmerkung:</label><br>
+                        <textarea name="text" id="text" cols="42" rows="10" size="40"></textarea>
+                    </div>
+                    <div class="form-box">
+                        <a>Wie sollen wir Sie benachrichtigen?</a><br>
+                        <input type="radio" name="kontakt" id="nachricht_m" value="m">
+                        <label for="nachricht_m">per Mail</label><br>
+
+                        <input type="radio" name="kontakt" id="nachricht_t" value="m">
+                        <label for="nachricht_t">per Telefon</label><br>
+
+                        <input type="radio" name="kontakt" id="nachricht_p" value="m">
+                        <label for="nachricht_p">per Post</label>
+                    </div>
+                
+            </fieldset>
+
+
+            <div>
+                <br><button type="reset">Zurücksetzen</button>
+                <button type="submit">Senden</button>
+            </div>
+                
+            
+            
+        </form>
+    </div>
+    
+</body>
+</html>
