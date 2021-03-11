@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .box {
+            width: 500px;
+            /*
+            height: 200px;
+            background: #777;
+            border: 1px solid #000;*/
+            float: left;
+            padding: 1em;
+            box-sizing: border-box;
+        }
+
+        header {
+            width: 80%;
+            background: olivedrab;
+            overflow: hidden; /* hebt das float der Kind-Elemente am ende auf */
+            margin: auto;
+        }
+
+        #b1 {
+            /*background: lightpink;*/
+        }
+
+        #b2 {
+            /*background: lime;*/
+        }
+
+        #b3 {
+            /*background: magenta;*/
+        }
+
+        #b4 {
+            height: 200px;
+            background: maroon;
+            /*clear: both;*/
+            width: 80%;
+            margin: auto;
+        }
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <div class="box" id="b1">
+            <h2>Lorem, ipsum.</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat sed voluptatem, necessitatibus blanditiis accusantium inventore veniam odio? Eum illum assumenda excepturi unde, nobis nisi nostrum!</p>
+        </div>
+
+        <div class="box" id="b2">
+            <h2>Lorem, ipsum dolor.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum illum repudiandae possimus, cumque maxime, eligendi, iure inventore officiis veritatis aliquam a sed? Alias, minima voluptates!</p>
+        </div>
+        <div class="box" id="b3">
+            <h2>Lorem ipsum dolor sit.</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim suscipit, exercitationem mollitia quia cum dolor repellat officiis.</p>
+        </div>
+        <!-- float ist noch für nachfolgeelemente an -->
+    </header>
+    <div id="b4">4</div>
+    
+    
+</body>
+</html>

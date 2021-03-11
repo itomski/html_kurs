@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            border: 1px solid #000;
+            background-color: #777;
+        }
+
+        .abs {
+            position: absolute; /* wechsel von statisch auf absolut */
+        }
+
+        .rel {
+            position: relative; /* wechsel von statisch auf relative */
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h2>Statische Positionierung, Standard für Blockelemente</h2>
+    <div class="box" style="margin-top: 120px;">1</div>
+    <div class="box">2</div>
+
+    <h2>Absolue Positionierung, jedes Element liegt in einer eigenen Ebene</h2>
+    <!-- positionsangaben mit top, left, right, bottom geleten ausgehend von den
+        den nicht statischen parent element -->
+    <div class="box abs" style="top: 500px; left: 200px;">3</div>
+    <div class="box abs">4</div>
+
+    <h2 style="margin-top: 350px;">Relative Positionierung</h2>
+    <!-- positionsangaben mit top, left, right, bottom geleten ausgehend von der
+        statischen position -->
+    <div class="box rel" style="top: 500px; left: 200px;">5</div>
+    <div class="box rel">6</div>
+
+    <div class="box rel" style="margin: auto;">Text...1</div>
+
+    <div class="box abs" style="margin: auto; left: -200px">Text...2</div>
+</body>
+</html>
