@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        html {
+            font-size: 1.2vw;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 1.5rem; /* 1,5 fache von 1.2vw */
+        }
+
+        #stage {
+            width: 1000px;
+            margin: auto;
+        }
+
+        .right, .center, .left {
+            box-sizing: border-box;
+            padding: 1em;
+        }
+
+        header {
+            width: 1000px;
+            min-height: 200px;
+            background-color: lightyellow;
+        }
+
+        nav {
+            overflow: hidden;
+            background-color: green;
+            min-height: 50px;
+        }
+
+        nav .left {
+            width: 800px;
+            float: left;
+        }
+
+        nav .right {
+            width: 200px;
+            float: left;
+        }
+
+        main {
+            overflow: hidden;
+            min-height: 600px;
+            background-color: lightskyblue;
+        }
+
+        main .left {
+            width: 200px;
+            float: left;
+        }
+
+        main .center {
+            width: 600px;
+            float: left;
+        }
+
+        main .right {
+            width: 200px;
+            float: left;
+        }
+
+        footer {
+            overflow: hidden;
+            background-color: lightpink;
+            min-height: 300px;
+        }
+
+        footer .left {
+            width: 350px;
+            float: left;
+
+        }
+
+        footer .center {
+            width: 300px;
+            float: left;
+        }
+
+        footer .right {
+            width: 350px;
+            float: left;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div id="stage">
+        <header>
+        </header>
+
+        <nav>
+            <div class="left">Bla</div>
+            <div class="right">Bla</div>
+        </nav>
+
+        <main>
+            <div class="left">
+                <h2>bla bla bla</h2>
+                <p>Bla bla bla</p>
+            </div>
+            <div class="center">Bla</div>
+            <div class="right">Bla</div>
+        </main>
+
+        <footer>
+            <div class="left">Bla</div>
+            <div class="center">Bla</div>
+            <div class="right">Bla</div>
+        </footer>
+
+    </div>
+</body>
+</html>
