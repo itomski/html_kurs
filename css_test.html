@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Steht immer im head -->
+    <style>
+        /* Hier ist kein HTML erlaubt, NUR Css */
+        /* Erlaubt uns beliebig viele Elemente in einem HTML-Dokument
+            zu formatieren */
+
+        /* HTML-Element-Selektor - Formatiert jedes Vorkommen dieses Elementes */
+        div {
+            width: 500px; 
+            background-color: #f0f;
+        }
+
+        /* Class-Selektor - Wiederverwendbare Formatierungen */
+        .rounded_yellow {
+            background-color: #ff0;
+            border-radius: 10px;
+        }
+
+        .green {
+            background-color: #0f0;
+        }
+
+        /* ID-Selektor - Formatierung für ein bestimmtes Element mit der ID */
+        #box1 {
+            background-color: #00f;
+            border: 1px solid #0ff;
+        }
+
+        /* Reihenfolge (Wichtigkeit ansteigend): HTML-Element, Class..., ID, Inline-Style */
+
+        /* Universal-Selektor */
+
+        #b2 * { /* Selektiert alle Elemente im Tag mit der Id b2 (auch Sub-Childs) */
+        }
+
+        #b2 > * { /* Selektiert alle direkten Kind-Elemente im Tag mit der Id b2 (ohne Sub-Childs) */
+            font-size: x-large;
+            margin-left: 10em;
+        }
+
+        h1, strong { /* Selektiert alle h1 und alle strong Elemente */
+            background-color: #f00;
+        }
+
+        h1 strong { /* Selektiert nur strong Elemente die in einem h1-Tag liegen */
+        }
+
+        /*
+        #nav-top li {
+            font-weight: bold;
+        }
+        */
+
+        .nav-top li { /* selektiert alle li elemente im nav-top, egal auf welcher ebene */
+        }
+
+        .nav-top > li { /* Direkte Kinder von #nav-top */
+            margin: 2em;
+            font-weight: normal;
+        }
+
+        /* .nav-top > li (ebene 1) > ul (ebene 2) > li (ebene 3) */
+
+       .nav-top > li > ul > li { /* Kinder von li-Elementen die in #nav-top liegen */
+            font-weight: bold;
+        }
+
+        input { /* selektiert alle input-elemete */
+            border: 1px solid #f00;
+            background-color: crimson;
+        }
+
+        /* Attribut selektor */
+        input[type=text] { /* selektiert alle input-elemete mit dem typ text */
+            border: 3px solid #0f0;
+        }
+
+        img[alt=nix] {
+            border: 3px solid #0f0;
+        }
+
+        img[width="200"] {
+            border: 3px dotted #0f0;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Inline-Style: Formatiert nur dieses Element -->
+    <div class="rounded_yellow green" id="box1"  style="width: 100px; background-color: #f00;"></div>
+
+
+    <div id="b2">
+        <a href="">Link</a>
+        <h1>Headline</h1>
+        <p>Das ist <span style="color: green;">hier</span> ein Text.</p>
+
+        <!-- a, h1, p = direkte Kinder von #b2 -->
+        <!-- span = direktes Kind von p, indirektes Kind von #b2 -->
+
+    </div>
+
+    <!-- div: Block-Element ohne bestimmte Bedeutung -->
+    <!-- span: Inline-Element ohne bestimmte Bedeutung -->
+
+
+    <ul class="nav-top">
+        <li>Deutschland <!-- ebene 1 -->
+            <ul> <!-- ebene 2 -->
+                <li>Berlin</li> <!-- ebene 3 -->
+                <li>München</li>
+            </ul>
+        </li>
+        <li>Spanien</li>
+        <li>Italien
+            <ul>
+                <li>Verona</li>
+                <li>Rom</li>
+            </ul>
+        </li>
+    </ul>
+
+    <hr>
+
+    <ul class="nav-top">
+        <li>Deutschland
+            <ul>
+                <li>Berlin</li>
+                <li>München</li>
+            </ul>
+        </li>
+        <li>Spanien</li>
+        <li>Italien
+            <ul>
+                <li>Verona</li>
+                <li>Rom</li>
+            </ul>
+        </li>
+    </ul>
+
+    <hr>
+
+    <input type="phone"><br>
+    <input type="text"><br>
+    <input type="number"><br>
+    <input type="text"><br>
+
+    <img src="img/produkte/kaffeemaschine.jpg" alt="nix" width="100">
+    <img src="img/produkte/kaffeemaschine.jpg" alt="..." width="100">
+    <img src="img/produkte/kaffeemaschine.jpg" alt="" width="200">
+
+</body>
+</html>
