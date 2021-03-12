@@ -5,11 +5,16 @@ main {
     overflow: hidden; /* löst das float nach dem letzten Kind-Element wieder auf */
 }
 
+.fotoWrapper {
+    text-align: center;
+    width: 300px;
+    float: left; /* können in der gleichen Zeile stehen, wenn genügend Platz da ist */
+}
+
 .fotoBox {
     width: 300px;
     height: 300px;
     background-color: aquamarine;
-    float: left; /* können in der gleichen Zeile stehen, wenn genügend Platz da ist */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
