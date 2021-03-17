@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.0.0/css/bootstrap.min.css">
+    <style>
+        main {
+            background-color: #ff0;
+            min-height: 500px;
+        }
+
+        .left {
+            background-color: #f0f;
+        }
+
+        .center {
+            background-color: #0ff;
+        }
+
+        .right {
+            background-color: #0f0;
+        }
+    </style>
+
+
+</head>
+<body>
+    
+    <!-- container-fluid: immer 100% -->
+    <main class="container-fluid">
+
+        <div class="row">
+            <div class="col left">
+                <h2>Left</h2>
+            </div>
+
+            <div class="col center">
+                <h2>Center</h2>
+            </div>
+
+            <div class="col d-none d-lg-block  right">
+                <h2>Right</h2>
+            </div>
+        </div>
+    </main>
+
+    <!-- container: arbeitet mit breakpoints -->
+    <aside class="container">
+
+        <!-- Bootstrap teilt die Fläche horizontal in 12 Teile -->
+        <div class="row">
+            <div class="col-6 col-md-8 col-lg-9 left">
+                <h2>Left</h2>
+                <img src="img/produkte/plattenspieler.jpg" class="img-fluid img-thumbnail" alt="">
+            </div>
+
+            <div class="col col-md-4 col-lg-3">
+                <h2>Right</h2>
+
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>kfghf</th>
+                            <th>dfggf</th>
+                            <th>gffg</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>kfdh</td>
+                        <td>fdsf</td>
+                        <td>dsfd</td>
+                    </tr>
+                    <tr>
+                        <td>hgf</td>
+                        <td>fggh</td>
+                        <td>sasd</td>
+                    </tr>
+                    <tr>
+                        <td>zzu</td>
+                        <td>tee</td>
+                        <td>zui</td>
+                    </tr>
+                </table>
+
+
+
+            </div>
+        </div>
+    </aside>
+
+
+
+</body>
+</html>

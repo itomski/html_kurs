@@ -6,7 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        /* CDN - Content Delivery Network */
         @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+
+        html {
+            font-size: 14px;
+        }
 
         body {
             margin: 0;
@@ -46,6 +51,11 @@
 
         /* break-point, wenn browser-breite kleiner als 1220px */
         @media screen and (max-width: 1220px) {
+
+            body {
+                font-size: 1.2rem;
+            }
+
             main {
                 width: 1000px;
             }
@@ -63,9 +73,59 @@
             }
         }
 
-        /* break-point, wenn browser-breite kleiner als 760px */
+        /* break-point, wenn browser-breite kleiner als 1020px */
+        @media screen and (max-width: 1020px) {
+
+            body {
+                font-size: 1rem;
+            }
+
+            main {
+                width: 760px;
+            }
+
+            #b1 {
+                width: 300px;
+            }
+
+            #b2 {
+                width: 460px;
+            }
+
+            #b3 {
+                display: none;
+            }
+        }
         /* break-point, wenn browser-breite kleiner als 500px */
 
+        @media screen and (max-width: 760px) {
+
+            body {
+                font-size: .85rem;
+            }
+
+            main {
+                width: 100%;
+            }
+
+            #b1 {
+                width: 100%;
+            }
+
+            #b2 {
+                width: 100%;
+                background-color: #ff0;
+            }
+
+            #b3 {
+                display: none;
+            }
+        }
+
+        /*
+        @media screen and (orientation: landscape) {
+        }
+        */
 
     </style>
 </head>
