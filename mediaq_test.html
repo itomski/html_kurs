@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+
+        body {
+            margin: 0;
+            font-family: 'Berkshire Swash', Arial, cursive;
+        }
+
+        /* standard */
+        main {
+            background-color: #777;
+            width: 1200px;
+            margin: auto;
+            overflow: hidden; /* löst das floaten der Kind-Elemente am ende der Box auf */
+        }
+
+        .box{
+            min-height: 200px;
+            padding: 1em;
+            /* standard: größe wird exclusive padding und boder angegeben */
+            box-sizing: border-box; /* größe inkl. padding und border */
+            float: left;
+        }
+
+        #b1 {
+            background-color: #f00;
+            width: 300px;
+        }
+
+        #b2 {
+            background-color: #0f0;
+            width: 600px;
+        }
+
+        #b3 {
+            background-color: #00f;
+            width: 300px;
+        }
+
+        /* break-point, wenn browser-breite kleiner als 1220px */
+        @media screen and (max-width: 1220px) {
+            main {
+                width: 1000px;
+            }
+
+            #b1 {
+                width: 250px;
+            }
+
+            #b2 {
+                width: 500px;
+            }
+
+            #b3 {
+                width: 250px;
+            }
+        }
+
+        /* break-point, wenn browser-breite kleiner als 760px */
+        /* break-point, wenn browser-breite kleiner als 500px */
+
+
+    </style>
+</head>
+<body>
+    
+
+    <main>
+        <div id="b1" class="box">Löft</div>
+        <div id="b2" class="box">Center</div>
+        <div id="b3" class="box">Right</div>
+    </main>
+
+
+</body>
+</html>
