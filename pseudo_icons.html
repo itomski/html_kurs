@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="bootstrap-5.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <style>
+        p {
+            font-size: 3em;
+            color: deeppink;
+            transition: all linear .5s;
+        }
+
+        p:hover {
+            color: gold;
+        }
+    </style>
+
+</head>
+<body>
+
+    <p>Lorem ipsum dolor sit amet. 
+        <!-- aria-hidden: Screen-Reader liest diesen Tag nicht vor -->
+        <span class="fa fa-address-book" aria-hidden="true"></span>
+        <!-- sr-only: Text wird nur bei Screen-Readern vorgelesen -->
+        <span class="sr-only">Adressbuch</span>
+        <i class="fa fa-bullhorn fa-5x" aria-hidden="true"></i>
+    </p>
+</body>
+</html>

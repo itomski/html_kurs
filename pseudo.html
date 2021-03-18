@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Klassen und Pseudo-Elemente</title>
+
+    <style>
+        .parentBox {
+            background-color: #0ff;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: #ff0;
+            transition: all ease 1s;
+        }
+
+        /*
+        .parentBox:hover .box {
+            background-color: #f0f;
+            margin-left: 500px;
+        }
+        */
+
+        .box:hover {
+            background-color: #f0f;
+            width: 500px;
+        }
+
+        input[type="text"] {
+            padding: 5px;
+            border: 1px solid #777;
+            transition: all ease 1s;
+        }
+
+        input[type="text"]:focus { /* focus: element ist ausgewählt */
+            background-color: rgb(110, 170, 210);
+        }
+
+        input[type="text"]:required { /* required: pflichtattribut */
+            border-right: 1em solid #f00;
+        }
+
+        a:link, a:visited, a:active {
+            font-size: 2em;
+            color: rgb(43, 129, 187);
+        }
+
+        a:hover {
+            color: rgb(183, 22, 189);
+        }
+
+        .liste li {
+            border: 1px dotted #777; 
+            width: 250px;
+            margin-bottom: .5em;
+            padding: .5em;
+        }
+
+        .liste li:empty { /* selektiert ein leeres li */
+            border: 2px dashed #f00; 
+        }
+
+
+        .liste li:first-child { /* erstes li in der liste */
+            color: #f00;
+        }
+
+        .liste li:last-child { /* letztes li in der liste */
+            color: #0f0;
+        }
+
+        .liste li:nth-child(2) { /* li an der ausgewählten position in der liste */
+            color: #f0f;
+        }
+
+        .liste .aktiv {
+            color: #0ff;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <h1>Pseudo-Klassen</h1>
+
+    <div class="parentBox">
+        <div class="box">
+        </div>
+    </div>
+
+    <form action="">
+        <p><input type="text" placeholder="Name" name="zeug1" id="zeug1"></p>
+        <p><input type="text" placeholder="Stadt" name="zeug2" id="zeug2"></p>
+        <p><label for="zeug3">PLZ</label><br>
+            <input type="text" name="zeug3" id="zeug3" required></p>
+    </form>
+
+    <p><a href="pseudo.html">Pseudo</a></p>
+
+    <h2>Pseudo-Elemente</h2>
+
+    <!-- ul>li*5{Text$} -->
+    <ul class="liste">
+        <li>Text1</li>
+        <li>Text2</li>
+        <li class="aktiv">Text3</li>
+        <li></li>
+        <li>Text5</li>
+    </ul>
+
+    <ul class="liste">
+        <li>Text1</li>
+        <li>Text2</li>
+        <li>Text3</li>
+    </ul>
+</body>
+</html>
