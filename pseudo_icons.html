@@ -10,14 +10,70 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
 
     <style>
+
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            counter-reset: a; /* counter mit Namen a wird auf 0 gesetzt */
+        }
+
         p {
-            font-size: 3em;
+            font-size: 1em;
             color: deeppink;
             transition: all linear .5s;
         }
-
+        /*
         p:hover {
             color: gold;
+        }*/
+
+        .hey::after {
+            content: "...";
+        }
+
+        .hey::before {
+            counter-increment: a; /* counter a wird um 1 hochgezählt */
+            content: "Pos. " counter(a) ": ";
+        }
+
+        p::first-letter {
+            font-size: x-large;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: indianred;
+        }
+
+        p::first-line {
+            font-size: x-large;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: indianred;
+        }
+
+        p::selection {
+            background-color: indigo;
+            color: khaki;
+        }
+
+        .bd {
+            position: absolute;
+        }
+
+        .bd::backdrop {
+            background: rgba(255,0,0,0.5);
+            width: 100px;
+            height: 100px;
+        }
+
+        .shadow {
+            top: 0;
+            position: fixed;
+            height: 100%;
+            width: 100%;
+            background: rgba(0,0,0,0.5);
+            z-index: 50;
+            -webkit-backdrop-filter: blur(2px);
+            backdrop-filter: blur(2px);
         }
     </style>
 
@@ -29,7 +85,32 @@
         <span class="fa fa-address-book" aria-hidden="true"></span>
         <!-- sr-only: Text wird nur bei Screen-Readern vorgelesen -->
         <span class="sr-only">Adressbuch</span>
-        <i class="fa fa-bullhorn fa-5x" aria-hidden="true"></i>
+        <i class="fa fa-bullhorn fa-lg fa-spin" aria-hidden="true"></i>
     </p>
+
+    <p style="background-color: grey;">
+        <i class="fa fa-bullhorn fa-lg fa-inverse" aria-hidden="true"></i>
+    </p>
+
+    <div class="hey">Peter</div>
+    <div class="hey">Bruce</div>
+    <div class="hey">Natasha</div>
+    <div class="hey">Steve</div>
+
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam alias provident itaque molestiae. Quasi eius commodi sapiente ea unde magnam, asperiores, labore mollitia sed dolorem alias totam quas error! Sapiente modi sint voluptate molestiae mollitia numquam, delectus fugit iure reprehenderit quo expedita ullam sunt? Velit dolor sapiente quas ipsam labore?</p>
+
+
+    <div style="background-color: lightgreen; position: absolute; width: 300px; height: 300px; z-index: 100;">
+        <div class="bd">Hallo welt</div>
+    </div>
+
+    <div class="shadow"></div>
 </body>
 </html>
