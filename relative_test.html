@@ -15,12 +15,16 @@
         /* 
             static: verbraucht Platz und verdrängt andere Elemente, ignoriert
             top, left, rght und bottom angaben. Hat KEINE eigene Z-Index-Ebene
-
+            
             relative: wie static (verbraucht Platz und verdrängt andere Elemente) 
             kann mit top und left nachträglich verschieben werden.
+            top und left beschreiben die Verschiebung ausgehend von der aktuellen relativen
+            Position des Elementes.
 
             absolut: verbraucht kein Platz und verdrängt nicht, da es in einer 
             eigenen Ebene liegt. Hat eine eigene Z-Index-Ebene
+            top, left, right bottom beschreiben die Verschiebung ausgehend von dem
+            nächsthöheren NICHT STATISCHEN Element oder falls nicht vorhanden dann body.
         */
         .dialog {
             position: relative; /* ico richt sich nach der box aus, wenn sie nicht static ist */

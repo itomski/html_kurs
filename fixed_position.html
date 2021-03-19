@@ -10,17 +10,25 @@
         /*
         fixed: wie absolut, bleibt aber beim scrollen an seiner position stehen:
         */
-        #back-link {
-            padding: 1.1em 1em;
-            background-color: rgb(194, 53, 53);
-            border-radius: 50%;
+
+        #link-box {
             position: fixed;
             right: 1em;
             bottom: 1em;
-            box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+            overflow: hidden;
+            padding: 1em;
         }
 
-        #back-link a {
+        .back-link {
+            padding: 1.1em 1em;
+            background-color: rgb(194, 53, 53);
+            border-radius: 50%;
+            box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+            float: left;
+            margin-left: 10px;
+        }
+
+        .back-link a {
             color: #fff;
         }
 
@@ -28,7 +36,11 @@
 
 </head>
 <body>
-    <div id="back-link"><a href="#start"><i class="fa fa-arrow-up fa-fw fa-lg" aria-hidden="true"></i></a></div>
+    <div id="link-box">
+        <div class="back-link"><a href="#start"><i class="fa fa-arrow-up fa-fw fa-lg" aria-hidden="true"></i></a></div>
+        <div class="back-link"><a href="#start"><i class="fa fa-arrow-up fa-fw fa-lg" aria-hidden="true"></i></a></div>
+        <div class="back-link"><a href="#start"><i class="fa fa-arrow-up fa-fw fa-lg" aria-hidden="true"></i></a></div>
+    </div>
 
     <h1 id="start">Lorem, ipsum dolor.</h1>
     <h2>Lorem, ipsum.</h2>
