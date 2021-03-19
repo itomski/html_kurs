@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        /* 
+            static: verbraucht Platz und verdrängt andere Elemente, ignoriert
+            top, left, rght und bottom angaben. Hat KEINE eigene Z-Index-Ebene
+
+            relative: wie static (verbraucht Platz und verdrängt andere Elemente) 
+            kann mit top und left nachträglich verschieben werden.
+
+            absolut: verbraucht kein Platz und verdrängt nicht, da es in einer 
+            eigenen Ebene liegt. Hat eine eigene Z-Index-Ebene
+        */
+        .dialog {
+            position: relative; /* ico richt sich nach der box aus, wenn sie nicht static ist */
+            width: 250px;
+            padding: 1em;
+            box-sizing: border-box;
+            background-color: #ff0;
+            /*top: 50px;*/
+            margin-top: 200px;
+            border: 1px solid #000;
+        }
+
+        .dialog h2 {
+            margin-top: 0;
+        }
+
+        .ico {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    
+    <div class="dialog">
+        <div class="ico"><i class="fa fa-coffee" aria-hidden="true"></i></div>
+        <h2>Headline</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium, sunt.</p>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem sapiente eaque quos. Ipsum harum libero, maxime eum optio minima repellat reiciendis vitae? Dicta cupiditate modi aliquid voluptatibus, nesciunt molestias quasi repellat pariatur quae veniam, possimus architecto corrupti, deserunt perspiciatis deleniti. Architecto, similique illum. Quo aspernatur consequatur, iusto reprehenderit itaque architecto.</p>
+
+</body>
+</html>
